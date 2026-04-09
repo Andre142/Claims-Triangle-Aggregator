@@ -6,7 +6,7 @@ This tool was built using pandas and tested against the Kasa.ai Simulation Machi
 
 ## Parameters
 
-Segment Filtering: Pass dictionary arguments (e.g., segment_filter={'lob': 3}) to subset the data by Line of Business, Claim Code, or Injury Type prior to aggregation.
+Segment Filtering: Pass dictionary arguments (e.g., segment_filter={'lob': 3}) to subset the data by Line of Business, Claim Code, or Injury Type before aggregation.
 
 Accounting Basis (Occurrence vs. Claims-Made): Toggle the origin period between accident_year (Occurrence) and calculated report_year (Claims-Made) by adding the report lag to the origin date.
 
