@@ -66,15 +66,15 @@ file_name = 'sm_100000claims_records.csv'
 
 
 print("\n--- TEST 1: Standard Annual Occurrence Triangle ---")
-standard_tri = build_advanced_triangle(file_name, basis='occurrence', time_unit='annual')
+standard_tri = build_triangle(file_name, basis='occurrence', time_unit='annual')
 print(standard_tri.head())
 
 
 print("\n--- TEST 2: Claims-Made Basis (LOB 3 Only) ---")
-claims_made_tri = build_advanced_triangle(file_name, basis='claims_made', segment_filter={'lob': 3})
+claims_made_tri = build_triangle(file_name, basis='claims_made', segment_filter={'lob': 3})
 print(claims_made_tri.head())
 
 
 print("\n--- TEST 3: Quarterly Origin Triangle ---")
-quarterly_tri = build_advanced_triangle(file_name, time_unit='quarterly')
+quarterly_tri = build_triangle(file_name, time_unit='quarterly')
 print(quarterly_tri.head())
